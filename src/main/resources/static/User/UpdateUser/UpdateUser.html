@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tech</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="banner">
+        <h1>Health Tech</h1>
+        <h2>(Update User)</h2>
+    </div>
+      
+    <div class="updateUserDiv">
+        <h3>User Information</h3>
+        <form method="POST" id="updateUserForm">
+            <label for="cpf">Cpf: </label>
+            <input type="text" id="cpf" name="cpf">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName">
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+            <label for="gender">Gender:</label>
+            <select name="gender" id="gender">
+                <option value="MALE" selected>MALE</option>
+                <option value="FEMALE">FEMALE</option>
+            </select>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="cellPhoneNumber">Cell Phone Number:</label>
+            <input type="text" id="cellPhoneNumber" name="cellPhoneNumber">
+            <label for="homePhoneNumber">Home Phone Number:</label>
+            <input type="text" id="homePhoneNumber" name="homePhoneNumber">
+            <label for="insuranceCardNumber">Insurance Card Number:</label>
+            <input type="text" id="insuranceCardNumber" name="insuranceCardNumber">
+            
+            <div class="button-container">
+                <button type="submit" id="saveButton">Save</button>
+                <button type="button" id="backButton">Back</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        &copy;2024 Health Tech | Powered by
+        <a href="#">MarcosTulioSDLV</a>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

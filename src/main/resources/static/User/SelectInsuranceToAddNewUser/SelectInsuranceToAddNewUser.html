@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Tech</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="banner">
+        <h1>Health Tech</h1>
+        <h2>(Select Insurance)</h2>
+    </div>
+
+    <div class="searchContainer">
+            <label for="searchText" id="searchLabel">Search By Name:</label>
+            <input type="text" id="searchText" name="searchText">
+            <button type="button" id="searchButton" class="searchButton">Ok</button>
+    </div>
+
+    <div class="showAllInsurancesContainer">
+        <button type="button" id="showAllInsurancesButton" class="showAllInsurancesButton">Show All Insurances</button>
+    </div>
+
+    <div class="paginationTextContainer">
+        <span id="paginationText" class="paginationText">Pagination Text</span>
+    </div>
+
+    <table class="tableInsurances">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Select</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be dynamically inserted here -->
+        </tbody>
+    </table>
+        
+    <div class="pagination">
+        <button id="prevPage" class="prevPage">Previous</button>
+        <button id="nextPage" class="nextPage">Next</button>
+    </div>
+      
+    <div class="insuranceOperationsContainer">
+        <button type="button" id="backButton" class="backButton">Back</button>
+        <button type="button" id="okButton" class="okButton">Ok</button>
+    </div>
+
+    <div class="footer">
+        &copy;2024 Health Tech | Powered by
+        <a href="#">MarcosTulioSDLV</a>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

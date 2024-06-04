@@ -1,0 +1,157 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    background: repeating-linear-gradient(
+        0deg,
+        #f9f9f9,
+        #f9f9f9 10px,
+        #e0e0e0 10px,
+        #e0e0e0 20px
+    );
+}
+
+.banner {
+    background-color: #4CAF50;
+    color: white;
+    /*padding: 1.5em;*/
+    padding: 35px;
+    text-align: center;
+}
+
+.banner h1, .banner h2 {
+    margin: 0;
+    padding: 3px 0;
+}
+
+.searchContainer, .showAllInsurancesContainer, .paginationTextContainer {
+    text-align: right;
+
+    width: 80%;
+    margin: 20px auto;
+}
+
+.showAllInsurancesContainer, .paginationTextContainer{
+
+    overflow: hidden; /* Agregamos esto para que el contenedor contenga los elementos flotantes */
+}
+
+.searchContainer .searchButton, .showAllInsurancesContainer button, .insuranceOperationsContainer button, .pagination .prevPage, .pagination .nextPage{
+    font-family: Arial, sans-serif;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+
+    padding: 8px 10px;/*padding: 5px 10px;*/
+
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+
+    font-family: Arial, sans-serif;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+}
+
+.searchContainer .searchButton:hover, .showAllInsurancesContainer button:hover, .insuranceOperationsContainer button:hover,.pagination .prevPage:hover, .pagination .nextPage:hover {
+    background-color: #45a049;
+}
+
+.pagination .prevPage:disabled, .pagination .nextPage:disabled {
+    background-color: #ccc; /* Cambia el color de fondo a uno gris para indicar desactivación */
+    color: #888; /* Cambia el color de texto a uno más claro */
+    cursor: not-allowed; /* Cambia el cursor a "no permitido" para indicar que no se puede hacer clic */
+}
+
+.searchContainer label {
+    font-size: 1.1em;
+    /*margin-right: 0.5em;*/
+}
+
+.searchContainer input {
+    padding: 6px 10px;
+    font-size: 1em;
+    /*margin-right: 0.5em;*/
+}
+
+
+.tableInsurances {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 1em;
+    background-color: white;
+    border-radius: 20px; /* Add border-radius property here */
+
+    overflow: hidden; /* This ensures that rounded corners are fully visible */
+
+    /* Agrega la transición de opacidad para suavizar los cambios */
+    transition: opacity 0.1s ease; /* Ajusta la duración y la función de temporización según sea necesario, colocar el mismo valor del temporizador 0,1s = 100 milisegungos*/
+}
+
+.tableInsurances th, .tableInsurances td {
+    padding: 10px;/*padding: 5px 10px;*/
+    border: 1px solid #ddd;
+    text-align: left;/*NEW*/
+}
+
+.tableInsurances th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+.pagination {
+    /*margin: 1em 0;*/
+    text-align: center; /* Centra los botones horizontalmente */
+}
+
+
+.insuranceOperationsContainer {
+    text-align: right;
+    width: 80%;
+    margin: 20px auto;
+
+    overflow: hidden; /* Agregamos esto para que el contenedor contenga los elementos flotantes */
+}
+
+.backButton{
+    float: left;
+}
+
+.paginationText,.showAllInsurancesContainer .addInsuranceButton {
+    /*font-size: 1.2em;
+    margin: 1em 0;*/
+    
+    float: left;
+    font-weight: bold;
+}
+
+.paginationText{
+    font-size: 1.2em;
+    margin: 1em 0;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+
+}
+
+.footer a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
