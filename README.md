@@ -5,7 +5,7 @@
 I developed a Web Application to manage users and their medical insurances in a Brazilian Clinic. 
 This system allows to store user information such Brazilian Cpf, first name, last name, birthday, cell phone number, home phone number etc, and also medical insurances.
 
-
+![HealthTechImg1](https://github.com/MarcosTulioSDLV/Health-Tech/assets/41268178/0886893a-6078-4ced-a55b-83ad3273c8b7)
 
 
 # Health Tech Rest API (Backend)
@@ -31,6 +31,7 @@ This Rest API was built with:
 
 ## System Class Diagram
 
+![HealthTechClassDiagram](https://github.com/MarcosTulioSDLV/Health-Tech/assets/41268178/47ceb1f1-8c13-429e-9031-fbb6666510f9)
 
 # Fronted
 
