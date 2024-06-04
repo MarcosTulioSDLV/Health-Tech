@@ -42,6 +42,5 @@ The Fronted was built with:
 - CSS
 - Vanilla JavaScript.
 
-temp
 
 
