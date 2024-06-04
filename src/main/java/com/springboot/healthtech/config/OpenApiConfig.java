@@ -18,7 +18,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
         url = "https://ar.linkedin.com/in/marcos-tulio-soto-de-la-vega-8a6b9668",
         email = "mtsotodelavega@gmail.com"
 )
-        ,license = @License(name = "GNU General Public License",url = "\"https://www.gnu.org/licenses/gpl-3.0.html\"")
+        ,license = @License(name = "GNU General Public License",url = "https://www.gnu.org/licenses/gpl-3.0.html")
 ))
 public class OpenApiConfig {
 
