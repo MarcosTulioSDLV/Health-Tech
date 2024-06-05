@@ -4,7 +4,7 @@
 
 
 I developed a Web Application to manage users and their medical insurances in a Brazilian Clinic. 
-This system allows to store user information such Brazilian Cpf, first name, last name, birthday, cell phone number, home phone number etc, and also medical insurances.
+This system allows to store user information such Brazilian Cpf, first name, last name, birthday, cell phone number, home phone number etc, and also to store medical insurance.
 
 ![HealthTechImg1](https://github.com/MarcosTulioSDLV/Health-Tech/assets/41268178/0886893a-6078-4ced-a55b-83ad3273c8b7)
 
