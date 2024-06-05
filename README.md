@@ -14,7 +14,7 @@ The Backend was built by a Rest API by using **Spring Boot and Java. I used some
 
 The system ensures that there are no duplicate registrations using the Cpf as a unique identifier, if this information is provided (not mandatory). Similarly, for the cell phone number and home phone number fields, at least one of them must be filled with a valid brazilian phone number.
 
-The system allows to register a new patient, update an existing patient and delete it. The insurance is selected from all available insurance previously stored in the insurance table.
+The system allows to register a new patient, update an existing patient and delete it. The insurance is selected from all available insurances previously stored in the insurance table.
 
 
 ## Database Config: 
