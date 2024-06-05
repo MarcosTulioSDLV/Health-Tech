@@ -40,7 +40,7 @@ This Rest API was built with:
 The Fronted was built with:
 - HTML
 - CSS
-- Vanilla JavaScript.
+- Vanilla JavaScript
 
 
 
