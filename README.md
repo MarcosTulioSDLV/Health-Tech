@@ -4,7 +4,7 @@
 
 
 I developed a Web Application to manage users and their medical insurances in a Brazilian Clinic. 
-This system allows to store user information such Brazilian Cpf, first name, last name, birthday, cell phone number, home phone number etc, and also to store medical insurances.
+This system allows to store user information such brazilian Cpf, first name, last name, birthday, cell phone number, home phone number etc, and also to store medical insurances.
 
 ![HealthTechImg1](https://github.com/MarcosTulioSDLV/Health-Tech/assets/41268178/0886893a-6078-4ced-a55b-83ad3273c8b7)
 
@@ -12,7 +12,7 @@ This system allows to store user information such Brazilian Cpf, first name, las
 # Health Tech Rest API (Backend)
 The Backend was built by a Rest API by using **Spring Boot and Java. I used some common libraries for this Rest API such Spring Web, Spring Data JPA, Validation, H2 Database and SpringDoc OpenAPI Starter WebMVC UI 2.3.0 (for the API documentation)**.
 
-The system ensures that there are no duplicate registrations using the Cpf as a unique identifier, if this information is provided (not mandatory). Similarly, for the cell phone number and home phone number fields, at least one of them must be filled with a valid number.
+The system ensures that there are no duplicate registrations using the Cpf as a unique identifier, if this information is provided (not mandatory). Similarly, for the cell phone number and home phone number fields, at least one of them must be filled with a valid brazilian phone number.
 
 The system allows to register a new patient, update an existing patient and delete it. The insurance is selected from all available insurance previously stored in the insurance table.
 
