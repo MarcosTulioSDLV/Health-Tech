@@ -43,7 +43,7 @@ public class UserService {
 
         //Validate data (Does the attribute exist?)
         //---
-        if(user.getCpf().equals(""))
+        if(user.getCpf()!=null && user.getCpf().trim().isEmpty())
             user.setCpf(null);
         if(user.getCpf()!=null && userRepository.existsByCpfIgnoreCase(user.getCpf())){
             throw new UserCpfExistsException("User Cpf: "+user.getCpf()+" already exists!");
@@ -53,9 +53,9 @@ public class UserService {
             throw new UserEmailExistsException("User with Email: "+user.getEmail()+" already exists!");
         }
 
-        if(user.getCellPhoneNumber().equals(""))
+        if(user.getCellPhoneNumber()!=null && user.getCellPhoneNumber().trim().isEmpty())
             user.setCellPhoneNumber(null);
-        if(user.getHomePhoneNumber().equals(""))
+        if(user.getHomePhoneNumber()!=null && user.getHomePhoneNumber().trim().isEmpty())
             user.setHomePhoneNumber(null);
         if(user.getCellPhoneNumber()==null && user.getHomePhoneNumber()==null){
             throw new UserPhoneNumbersNullException("User Phone Numbers Null! You must add at least one Phone Number");
@@ -83,7 +83,7 @@ public class UserService {
 
         //Validate data (Does the attribute exist and belong to another existing instance?)
         //---
-        if(user.getCpf().equals(""))
+        if(user.getCpf()!=null && user.getCpf().trim().isEmpty())
             user.setCpf(null);
         if(user.getCpf()!=null && cpfExistsAndBelongsToAnotherExistingInstance(user.getCpf(),recoveredUser)){
             throw new UserCpfExistsException("User Cpf: "+user.getCpf()+" already exists!");
@@ -93,9 +93,9 @@ public class UserService {
             throw new UserEmailExistsException("User with Email: "+user.getEmail()+" already exists!");
         }
 
-        if(user.getCellPhoneNumber().equals(""))
+        if(user.getCellPhoneNumber()!=null && user.getCellPhoneNumber().trim().isEmpty())
             user.setCellPhoneNumber(null);
-        if(user.getHomePhoneNumber().equals(""))
+        if(user.getHomePhoneNumber()!=null && user.getHomePhoneNumber().trim().isEmpty())
             user.setHomePhoneNumber(null);
         if(user.getCellPhoneNumber()==null && user.getHomePhoneNumber()==null){
             throw new UserPhoneNumbersNullException("User Phone Numbers Null! You must add at least one Phone Number");
